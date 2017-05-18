@@ -22,6 +22,9 @@ import PlaygroundSupport
 //: ## Your code starts here
 // Create a new canvas
 let canvas = Canvas(width: 400, height: 600)
+canvas.fillColor = Color(hue: 20, saturation: 89, brightness: 94, alpha: 100)
+canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
+
 
 
 //: ## Template code

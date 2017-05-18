@@ -30,7 +30,17 @@ let blue = Color(hue: 196, saturation: 100, brightness: 75, alpha: 50)
 let yellow = Color(hue: 49, saturation: 96, brightness: 87, alpha: 100)
 
 // Your code below...
+canvas.drawShapesWithBorders = false
+canvas.fillColor = offWhite
+canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
 
+//blue circles
+        for y in stride(from: 225, to: 600, by: 40){
+            for x in stride(from: 20, to: 382, by: 40){
+            canvas.fillColor = blue
+            canvas.drawEllipse(centreX: x, centreY: y, width: 40, height: 40)
+    }
+}
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
 PlaygroundPage.current.liveView = canvas.imageView
