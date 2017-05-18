@@ -35,10 +35,10 @@ canvas.fillColor = offWhite
 canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600)
 
 //blue circles
-        for y in stride(from: 225, to: 600, by: 40){
-            for x in stride(from: 20, to: 382, by: 40){
+        for y in stride(from: 225, to: 582, by: 36){
+            for x in stride(from: 18, to: 382, by: 36){
             canvas.fillColor = blue
-            canvas.drawEllipse(centreX: x, centreY: y, width: 40, height: 40)
+            canvas.drawEllipse(centreX: x, centreY: y, width: canvas.width/11, height: canvas.height/16)
     }
 }
 //: ## Template code
